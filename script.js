@@ -41,7 +41,7 @@ const frenchNavBar = [
     "Détails",
     "Galerie",
     "Contactez-Nous",
-    "English",
+    "<i class='fa-solid fa-globe'></i> English",
     "Appartement <br> Elégant et Moderne",
     "Quotidien: <span>$250</span> <br>Mensuel <span class='save'>(économisez 53%)</span>: <span>$3500</span>",
     "Contactez-Nous"
@@ -132,7 +132,7 @@ const englishNavBar = [
     "Details",
     "Gallery",
     "Contact Us",
-    "Français",
+    "<i class='fa-solid fa-globe'></i> Français",
     "Modern <br> Stylish Appartment",
     "Daily: <span>$250</span> <br>Monthly <span class='save'>(save 53%)</span>: <span>$3500</span>",
     "Contact Us"
@@ -220,7 +220,7 @@ const englishContactUs = [
 
 function translate(texts){
     $("#main-nav ul li a span").each(function(index){
-        $(this).text(texts["navbar"][index]);
+        $(this).html(texts["navbar"][index]);
     });
 
     $(".header-text h1").html(texts["navbar"][5]);
@@ -338,6 +338,7 @@ $(document).ready(function(){
 
         setCookie("language", language);
         translate(texts);
+        toggleNavbar();
     });
 
     $("#nav-btn").click(toggleNavbar);
@@ -402,6 +403,8 @@ $(document).ready(function(){
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top
             }, 1000);
+
+            toggleNavbar();
         });
 
     });
