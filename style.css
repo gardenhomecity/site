@@ -233,6 +233,11 @@ header .header-text a.a-btn:hover {
 
 #main-nav ul li a[data-type="language"] {
     color: var(--primary-yellow);
+    border-left: solid 1px var(--primary-white);
+}
+
+#main-nav ul li a[data-type="language"] i {
+    color: var(--secondary-blue);
 }
 
 #main-nav ul li a span {
@@ -646,7 +651,8 @@ header .header-text a.a-btn:hover {
         flex-direction: column;
         width: 100%;
         padding-top: 0.625rem;
-        padding-bottom: 1.25rem;
+        /* padding-bottom: 1.25rem; */
+        padding-bottom: 0.625rem;
     }
 
     #main-nav ul li {
@@ -661,6 +667,11 @@ header .header-text a.a-btn:hover {
         text-align: center;
     }
 
+    #main-nav ul li a[data-type="language"] {
+        border-left: none;
+        /* border-top: solid 1px var(--primary-white); */
+    }
+    
     #main-nav ul li a span {
         font-size: 1.25rem;
     }
