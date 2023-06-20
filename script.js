@@ -70,7 +70,7 @@ const frenchFeatures = [
 ];
 
 const frenchDetails = [
-    "Détails de la Propriété",
+    "Détails",
     "Cette maison est un refuge idéal pour un groupe de 7 ou 8 personnes, offrant amplement d'espace et de confort. Elle offre une vue incroyable sur la mer, permettant aux invités de profiter de paysages à couper le souffle. De plus, la maison est entièrement équipée avec toutes les commodités nécessaires pour garantir un séjour pratique. Les invités peuvent profiter d'un accès ininterrompu à l'électricité 24h/24 et 7j/7, d'une connexion Wi-Fi fiable, d'eau chaude pour une expérience rafraîchissante, d'un sèche-cheveux pour les besoins de toilette personnelle, ainsi que du confort du chauffage central et de la climatisation dans toute la maison.",
     "Chambre",
     "Information",
@@ -123,7 +123,7 @@ const frenchContactUs = [
     "Contactez-Nous",
     "Beirut, Tour Garden City, en face du Burger King à Rawshe, à côté de l'hôtel Lancaster, 2ème étage.",
     "<i class='fa-solid fa-location-dot'></i> Addresse",
-    "<i class='fa-solid fa-phone'></i> Numéro de Téléphone",
+    "<i class='fa-solid fa-phone'></i> Téléphone",
     "<i class='fa-solid fa-envelope'></i> Adresse e-mail"
 ];
  
@@ -344,6 +344,13 @@ $(document).ready(function(){
     $("#nav-btn").click(toggleNavbar);
 
     $(window).resize(function(){
+        let width = $(".gallery-images .gallery-item:first-of-type").width();
+    
+        $(".gallery-images .gallery-item img").css({
+            "min-width": width, 
+            "min-height": 960 * width / 1280
+        });
+        
         if($("#main-nav").hasClass("opened")){
             toggleNavbar();
         }
@@ -391,6 +398,13 @@ $(document).ready(function(){
         });
     });
 
+    let width = $(".gallery-images .gallery-item:first-of-type").width();
+    
+    $(".gallery-images .gallery-item img").css({
+        "min-width": width, 
+        "min-height": 960 * width / 1280
+    });
+
     $("a[href^='#']").each(function(){
 
         $(this).click(function(e){
@@ -404,7 +418,9 @@ $(document).ready(function(){
                 scrollTop: $(this.hash).offset().top
             }, 1000);
 
-            toggleNavbar();
+            if(!$(this).hasClass("a-btn")){
+                toggleNavbar();
+            }
         });
 
     });
