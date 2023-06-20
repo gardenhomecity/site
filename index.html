@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Garden City Home</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css?v=2.0.0">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cf1b03868e.js" crossorigin="anonymous" defer></script>
+
+    <!-- jQuery 3.5.1 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer ></script>
+    
+    <script src="lightbox/js/lightbox.min.js" defer></script>
+
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js" defer></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
+    <script src="script.js?v=2.0.0" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <!-- Background used to make main picture darker -->
+        <div class="header-backdrop"></div>
+
+        <!-- Background displayed when the menu bar is opened -->
+        <div id="header-overlay"></div>
+
+        <div class="nav-wrapper">
+            <div class="logo-wrapper">
+                <i class="fa-solid fa-house logo" data-aos="zoom-in-down" data-aos-duration="1000"></i>
+                <span>Garden Home City</span>
+            </div>
+
+            <!-- Button to open the menu bar on mobile devices -->
+            <button id="nav-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <!-- <li><a href="#"><span>Features</span></a></li>
+                    <li><a href="#"><span>Details</span></a></li>
+                    <li><a href="#"><span>Gallery</span></a></li>
+                    <li><a href="#"><span>Contact Us</span></a></li>
+                    <li><a href="#" data-type="language"><span>French</span></a></li> -->
+
+                    <li><a href="#section-highlights"><span></span></a></li>
+                    <li><a href="#section-details"><span></span></a></li>
+                    <li><a href="#section-gallery"><span></span></a></li>
+                    <li><a href="#section-contactus"><span></span></a></li>
+                    <li><a href="#" data-type="language" id="translate-btn"><span></span></a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <div class="header-text" data-aos="fade-right" data-aos-duration="1000">
+            <!-- <h1 class="px-3">Looking for an amazing view?</h1>
+            <p class="px-3">Only for 20$ per  month or 3500$ per year</p>
+            <a href="#" class="d-inline-block mt-5">Contact Us</a> -->
+            <h1>Modern <br> Stylish Apartment</h1> <br><br>
+            <p>
+                Daily: <span>$250</span> <br>
+                
+                Monthly <span class="save">(save 53%)</span>: <span>$3500</span>
+            </p>
+            <a href="#section-contactus" class="d-inline-block a-btn mt-3">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="section-highlights" class="section-highlights-wrapper">
+            
+            <div class="section-highlights container">
+                
+                <h2 class="title" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <span>Garden Home City</span>
+                </h2>
+
+                <div class="highlights">
+
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <h3>Area</h3>
+                        <h4>300m<sup>2</sup></h4>
+                    </div>
+            
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-bed"></i>
+                        <h3>Bedrooms</h3>
+                        <h4>3</h4>
+                    </div>
+            
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-bath"></i>
+                        <h3>Bathrooms</h3>
+                        <h4>5</h4>
+                    </div>
+            
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-plug"></i>
+                        <h3>Electricity</h3>
+                        <h4>24/7</h4>
+                    </div>
+            
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-car"></i>
+                        <h3>Parking</h3>
+                        <h4>3</h4>
+                    </div>
+
+                    <div class="highlight-item" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <i class="fa-solid fa-tv"></i>
+                        <h3>HD TV</h3>
+                        <h4>2</h4>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <div class="section-features container-fluid mt-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 features" data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="title">
+                            <span>Main Features</span>
+                        </h2>
+
+                        <p class="mt-5">
+                            This brand new 300-square-meter apartment is spacious, bright, and airy, offering plenty of natural light and modern decoration to make you feel at home.
+                        </p>
+
+                        <div class="row w-100">
+                            <div class="col-md-6 feature-item">
+                                <h3>Fabulous View</h3>
+                                <p>Our fantastic apartment with an excellent sea view throughout the day.</p>
+                            </div>
+
+                            <div class="col-md-6 feature-item">
+                                <h3>By The Sea</h3>
+                                <p>The apartment is located in the center of BEIRUT, a two-minute walk from the beach.</p>
+                            </div>
+                            <div class="col-md-6 feature-item">
+                                <h3>Private Area</h3>
+                                <p>On y trouve une immense piscine privée et un grand parking fermé gratuit.</p>
+                            </div>
+                            <div class="col-md-6 feature-item">
+                                <h3>Close to Everything</h3>
+                                <p>There are numerous bars and restaurants, supermarkets, a city market, all within a few minutes' walk from the center.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section-details" class="section-details-wrapper my-5">
+            
+            <div class="section-details container">
+                <div class="details">
+                    <h2 class="title" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <span>Property Details</span>
+                    </h2>
+
+                    <p class="mt-4 text-center font-italic" data-aos="zoom-in-down" data-aos-duration="1000">
+                        This house is an ideal retreat for a group of 7 or 8 individuals, providing ample space and comfort. It offers an incredible sea view, allowing guests to indulge in breathtaking scenery. Moreover, the house is fully equipped with all the necessary logistics to ensure a convenient stay. Guests can enjoy uninterrupted access to 24/7 electricity, reliable Wi-Fi connectivity, hot water for a refreshing experience, a hair dryer for personal grooming needs, and the comfort of central heating and air conditioning (AC) throughout the house.
+                    </p>
+
+                    <table class="table table-bordered table-striped table-hover mt-4" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Bedrooms</td>
+                                <td>In this house, you will find three bedrooms, each with its own dedicated toilet. One of the bedrooms features a spacious king-size bed, while the other two bedrooms have two standard beds each.</td>
+                            </tr>
+                            <tr>
+                                <td>Bathrooms</td>
+                                <td>This house boasts a total of five bathrooms, each equipped with soap, shampoo, and all the necessary cleaning products.</td>
+                            </tr>
+                            <tr>
+                                <td>Living Rooms</td>
+                                <td>The house boasts two expansive living rooms, both flooded with natural light, creating a bright and welcoming ambiance. Each living room is equipped with an LG HDTV that can be connected to popular streaming services like Netflix and Disney. Additionally, you'll find two comfortable couches that can be easily converted into beds.</td>
+                            </tr>
+                            <tr>
+                                <td>Kitchen</td>
+                                <td>The kitchen is fully equipped with all the essential amenities, including a dining table, freezer, induction stove, electric kettle, refrigerator, and wine glasses.</td>
+                            </tr>
+                            <tr>
+                                <td>Laundry Room</td>
+                                <td>The laundry room, is dedicated to cleaning purposes and is equipped with a washing machine, a dishwasher, and a toilet. It provides the convenience of handling laundry and dishwashing tasks in one centralized space.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Basement</td>
+                                <td>The underground basement of this house features a spacious room designated for parking, providing ample space to accommodate up to three vehicles. Additionally, this versatile area can serve as a storage facility, allowing you to conveniently store and organize your belongings.</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-view-wrapper my-5">
+            <div class="section-view-backdrop"></div>
+            <div class="section-view container">
+                <h2 class="text-center px-3" data-aos="fade-up" data-aos-duration="1000">Looking for an amazing view?</h2>
+                <div data-aos="fade-down" data-aos-duration="1000">
+                    <a href="#section-contactus" class="d-inline-block a-btn mt-5">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-gallery" class="section-gallery-wrapper mb-5 py-5">
+            
+            <div class="section-gallery container">
+                
+                <h2 class="title" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <span>Gallery</span>
+                </h2>
+
+                <div class="gallery-images mt-5">
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/1.webp" data-lightbox="gallery" data-title="Living Room 1">
+                            <img src="images/gallery/1.webp" alt="Living Room 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/2.webp" data-lightbox="gallery" data-title="Living Room 1">
+                            <img src="images/gallery/2.webp" alt="Living Room 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/3.webp" data-lightbox="gallery" data-title="Living Room 1">
+                            <img src="images/gallery/3.webp" alt="Living Room 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/4.webp" data-lightbox="gallery" data-title="Living Room 1">
+                            <img src="images/gallery/4.webp" alt="Living Room 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/5.webp" data-lightbox="gallery" data-title="Living Room 1">
+                            <img src="images/gallery/5.webp" alt="Living Room 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/6.webp" data-lightbox="gallery" data-title="Living Room 2">
+                            <img src="images/gallery/6.webp" alt="Living Room 2" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 2</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/7.webp" data-lightbox="gallery" data-title="Living Room 2">
+                            <img src="images/gallery/7.webp" alt="Living Room 2" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Living Room 2</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/8.webp" data-lightbox="gallery" data-title="Bedroom 1">
+                            <img src="images/gallery/8.webp" alt="Bedroom 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/9.webp" data-lightbox="gallery" data-title="Bedroom 1">
+                            <img src="images/gallery/9.webp" alt="Bedroom 1" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 1</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/10.webp" data-lightbox="gallery" data-title="Bedroom 2">
+                            <img src="images/gallery/10.webp" alt="Bedroom 2" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 2</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/11.webp" data-lightbox="gallery" data-title="Bedroom 2">
+                            <img src="images/gallery/11.webp" alt="Bedroom 2" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 2</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/12.webp" data-lightbox="gallery" data-title="Bedroom 3">
+                            <img src="images/gallery/12.webp" alt="Bedroom 3" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 3</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/21.webp" data-lightbox="gallery" data-title="Bedroom 3">
+                            <img src="images/gallery/21.webp" alt="Bedroom 3" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bedroom 3</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/13.webp" data-lightbox="gallery" data-title="Kitchen">
+                            <img src="images/gallery/13.webp" alt="Kitchen" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Kitchen</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/14.webp" data-lightbox="gallery" data-title="Kitchen">
+                            <img src="images/gallery/14.webp" alt="Kitchen" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Kitchen</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/15.webp" data-lightbox="gallery" data-title="Kitchen">
+                            <img src="images/gallery/15.webp" alt="Kitchen" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Kitchen</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/16.webp" data-lightbox="gallery" data-title="Bathroom">
+                            <img src="images/gallery/16.webp" alt="Bathroom" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bathroom</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/17.webp" data-lightbox="gallery" data-title="Bathroom">
+                            <img src="images/gallery/17.webp" alt="Bathroom" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bathroom</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/18.webp" data-lightbox="gallery" data-title="Bathroom">
+                            <img src="images/gallery/18.webp" alt="Bathroom" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bathroom</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/19.webp" data-lightbox="gallery" data-title="Bathroom">
+                            <img src="images/gallery/19.webp" alt="Bathroom" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bathroom</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="gallery-item-backdrop">
+                            <span>View</span>
+                        </div>
+
+                        <a href="images/gallery/20.webp" data-lightbox="gallery" data-title="Bathroom">
+                            <img src="images/gallery/20.webp" alt="Bathroom" data-lightbox="gallery" loading="lazy">
+                        </a>
+
+                        <figcaption>Bathroom</figcaption>
+                    </figure>
+
+                </div>
+                
+                <div class="gallery-videos mt-5" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <video controls muted class="video-js" preload="metadata" height="300" data-setup="{}">
+                        <source src="videos/1.webm" type="video/webm" />
+                        <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="section-contactus" class="section-contactus-wrapper">
+            <div class="section-contactus-backdrop"></div>
+
+            <div class="section-contactus container">
+                
+                <h2 class="title title-contactus" data-aos="zoom-in-down" data-aos-duration="1000">
+                    <span>Contact Us</span>
+                </h2>
+
+                <div class="row">
+    
+                    <div class="contactus col-md-6" data-aos="zoom-in-down" data-aos-duration="500">
+                        
+                        <h3><i class="fa-solid fa-location-dot"></i> Address</h3>
+                        <h4>Beirut, Garden City Tower, facing Burger King in Rawshe next to Lancaster Hotel, 2nd floor.</h4>
+                        <br><br>
+                        
+                        <h3><i class="fa-solid fa-phone"></i> Phone Number</h3>
+                        <h4>Nada Alameh <br> +961 3 815 385</h4>
+                        <br><br>
+
+                        <h3><i class="fa-solid fa-envelope"></i> Email Address</h3>
+                        <h4>Tarek Bakri <br> tarekbakri15@gmail.com</h4>
+                    </div>
+    
+                    <div class="google-map col-md-6 mt-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6624.065510578224!2d35.47670802314759!3d33.888810241114825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzE0LjMiTiAzNcKwMjgnMzAuNiJF!5e0!3m2!1sen!2slb!4v1687044160872!5m2!1sen!2slb" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <i class="fa-solid fa-caret-up" id="up-btn"></i>
+                </div>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
