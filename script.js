@@ -348,7 +348,7 @@ $(document).ready(function(){
     
         $(".gallery-images .gallery-item img").css({
             "min-width": width, 
-            "min-height": 960 * width / 1280
+            "min-height": Math.ceil(960 * width / 1280)
         });
         
         if($("#main-nav").hasClass("opened")){
@@ -402,7 +402,7 @@ $(document).ready(function(){
     
     $(".gallery-images .gallery-item img").css({
         "min-width": width, 
-        "min-height": 960 * width / 1280
+        "min-height": Math.ceil(960 * width / 1280)
     });
 
     $("a[href^='#']").each(function(){
